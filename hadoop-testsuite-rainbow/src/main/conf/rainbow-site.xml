@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property>
+        <name>mapreduce.input.passgen.charset</name>
+        <value><![CDATA[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890`-=~!@#$%^&*()[]{}\\|;':\",./<>?]]></value>
+    </property>
+    <property>
+        <name>mapreduce.input.passgen.minLength</name>
+        <value>3</value>
+    </property>
+    <property>
+        <name>mapreduce.input.passgen.maxLength</name>
+        <value>5</value>
+    </property>
+    <property>
+        <name>mapreduce.input.passgen.splitCount</name>
+        <value>10</value>
+    </property>
+    <property>
+        <name>mapreduce.mapper.passgen.algorithm.class</name>
+        <value>com.uhlisys.hadoop.rainbow.mapreduce.GuavaHashingAlgorithm</value>
+    </property>
+    <property>
+        <name>mapreduce.mapper.passgen.algorithm.guava.hasher</name>
+        <value>md5</value>
+    </property>
+    <property>
+        <name>mapreduce.mapper.passgen.algorithm.guava.iterations</name>
+        <value>1</value>
+    </property>
+</configuration>
